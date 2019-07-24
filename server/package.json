@@ -1,0 +1,27 @@
+{
+  "name": "ebe-end-app",
+  "version": "1.0.0",
+  "scripts": {
+    "getout": "cd.. && cd client && yarn start",
+    "server": "nodemon --exec babel-node server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn getout\""
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "concurrently": "^4.1.1"
+  }
+}
